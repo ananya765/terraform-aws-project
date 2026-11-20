@@ -4,3 +4,4 @@
 tfplan
 *.tfvars
 crash.log
+trust-policy-clean.json
