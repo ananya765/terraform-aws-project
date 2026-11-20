@@ -7,12 +7,12 @@ terraform {
     }
   }
   backend "s3" {
-    bucket       = "tfstate-ananya-2026-58391"
-    key          = "AKIAWYE7LSMMIWMBSKTD"
-    region       = "ap-south-1"
-    encrypt      = true
-    use_lockfile = true   # S3-native locking (no DynamoDB needed on TF >= 1.10)
-  }
+  bucket       = "tfstate-ananya-2026-58391"
+  key          = "project2/terraform.tfstate"
+  region       = "ap-south-1"
+  encrypt      = true
+  use_lockfile = true
+ }
 }
 
 provider "aws" {
