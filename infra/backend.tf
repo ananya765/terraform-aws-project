@@ -7,12 +7,12 @@ terraform {
     }
   }
   backend "s3" {
-  bucket       = "tfstate-ananya-2026-58391"
-  key          = "project2/terraform.tfstate"
-  region       = "ap-south-1"
-  encrypt      = true
-  use_lockfile = true
- }
+    bucket       = "tfstate-ananya-2026-58391"
+    key          = "project2/terraform.tfstate"
+    region       = "ap-south-1"
+    encrypt      = true
+    use_lockfile = true
+  }
 }
 
 provider "aws" {
